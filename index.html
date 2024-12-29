@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1 id="title">RateWizard</h1>
+    </header>
+    <main>
+        <div id="container">
+            <div class="box" id="amount">
+                <label for="Amount">Amount</label><br>
+                <input type="number" min="0" step="0.01" id="Amount" value="1">
+            </div>
+            <div class="box" id="from">
+                <label for="From">From<img id="from-img" src="https://flagsapi.com/IN/flat/32.png"></label>
+                <br>
+                <select id="From">
+                    <option value="inr" selected>Indian Rupee</option>
+                </select>
+            </div>
+            <div class="box" id="to">
+                <label for="To">To<img id="to-img" src="https://flagsapi.com/US/flat/32.png"></label>
+                <br>
+                <select id="To">
+                    <option value="usd" selected>US Dollar</option>
+                </select>
+            </div>
+            <p id="msg"></p>
+            <p id="rate"></p>
+            <button id="convert">Convert</button>
+        </div>
+    </main>
+    <footer>
+        <div id="contact">
+            <p>&copy;RateWizard 2024 Currency Converter by Hardattsinh-Zala.</p><br>
+            <p>The data has been provided by <a href="https://github.com/fawazahmed0/currency-api" target="_blank">Currency API.</a></p><br>
+            <p style="font-weight: 500;">Want to connect?</p><br>
+            <p>You can share me your thoughts and feedback on<br>Email : <a href="mailto:zalahardatt@gmail.com">zalahardatt@gmail.com</a> </p>
+            <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/hardattsinh-zala-b665ba277/" target="_blank">Linkedin</a></p>
+            <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Hardattsinh-Zala" target="_blank">Github</a> </p>
+            <p><i class="fa-brands fa-x-twitter"></i> <a href="https://x.com/hardattsinhji" target="_blank">Twitter</a> </p>
+            <p>Thanks for visiting.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
