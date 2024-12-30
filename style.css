@@ -22,11 +22,11 @@ main {
 
 #container {
     min-height: 40vh;
-    max-width: 60vw;
+    max-width: 65vw;
     background-color: white;
     border-radius: 1.5rem;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto 10px auto;
     padding: 2rem;
     gap: 1rem
 }
@@ -103,10 +103,17 @@ p {
     padding: 2rem;
 }
 
+#exchange {
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+
 @media (max-width: 768px){
     body main #container {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .box {

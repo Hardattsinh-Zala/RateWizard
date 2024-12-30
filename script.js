@@ -6,6 +6,7 @@ let convert = document.querySelector("#convert");
 let amount = document.querySelector("#Amount");
 let msg = document.querySelector("#msg");
 let rateMsg = document.querySelector("#rate");
+let exchange = document.querySelector("#exchange");
 
 const date = new Date();
 let noTime = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
@@ -65,4 +66,13 @@ convert.addEventListener("click", async () => {
         rateMsg.innerText = `Failed to fetch data. Please try again later.`;
     }
 
+})
+
+exchange.addEventListener("click", () => {
+    let selectedOption = From.value;
+    From.value = To.value;
+    To.value = selectedOption;
+    let image = fromImg.src;
+    fromImg.src = toImg.src;
+    toImg.src = image;
 })
