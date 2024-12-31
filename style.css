@@ -109,7 +109,7 @@ p {
     color: grey;
 }
 
-@media (max-width: 768px){
+@media (max-width: 968px){
     body main #container {
         display: flex;
         flex-direction: column;
@@ -118,6 +118,7 @@ p {
 
     .box {
         margin-top: 0;
+        width: 100%;
     }
 
     #amount {
