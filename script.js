@@ -9,7 +9,7 @@ let rateMsg = document.querySelector("#rate");
 let exchange = document.querySelector("#exchange");
 
 const date = new Date();
-let noTime = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+let noTime = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 
 let URL = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@${noTime}/v1/currencies.min.json`;
 
